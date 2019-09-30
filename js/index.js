@@ -104,10 +104,10 @@ console.log(mainContentHeadings);
 
 let mainContentParagraphs = document.querySelectorAll('.main-content p');
 mainContentParagraphs[0].innerText = siteContent['main-content']['features-content'];
-mainContentParagraphs[0].innerText = siteContent['main-content']['about-content'];
-mainContentParagraphs[0].innerText = siteContent['main-content']['services-content'];
-mainContentParagraphs[0].innerText = siteContent['main-content']['product-content'];
-mainContentParagraphs[0].innerText = siteContent['main-content']['vision-content'];
+mainContentParagraphs[1].innerText = siteContent['main-content']['about-content'];
+mainContentParagraphs[2].innerText = siteContent['main-content']['services-content'];
+mainContentParagraphs[3].innerText = siteContent['main-content']['product-content'];
+mainContentParagraphs[4].innerText = siteContent['main-content']['vision-content'];
 console.log(mainContentParagraphs);
 
 const mainContentImage = document.querySelector('#middle-img');
