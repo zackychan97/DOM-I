@@ -92,9 +92,32 @@ CTAimage.src = siteContent.cta['img-src'];
 console.log(CTAimage);
 
 
+// main stuff section
 
+let mainContentHeadings = document.querySelectorAll('.main-content h4');
+mainContentHeadings[0].innerText = siteContent['main-content']['features-h4'];
+mainContentHeadings[1].innerText = siteContent['main-content']['about-h4'];
+mainContentHeadings[2].innerText = siteContent['main-content']['services-h4'];
+mainContentHeadings[3].innerText = siteContent['main-content']['product-h4'];
+mainContentHeadings[4].innerText = siteContent['main-content']['vision-h4'];
+console.log(mainContentHeadings);
 
+let mainContentParagraphs = document.querySelectorAll('.main-content p');
+mainContentParagraphs[0].innerText = siteContent['main-content']['features-content'];
+mainContentParagraphs[0].innerText = siteContent['main-content']['about-content'];
+mainContentParagraphs[0].innerText = siteContent['main-content']['services-content'];
+mainContentParagraphs[0].innerText = siteContent['main-content']['product-content'];
+mainContentParagraphs[0].innerText = siteContent['main-content']['vision-content'];
+console.log(mainContentParagraphs);
 
+const mainContentImage = document.querySelector('#middle-img');
+mainContentImage.src = siteContent['main-content']['middle-img-src'];
+console.log(mainContentImage);
 
+// contact
 
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.innerText = siteContent.contact['contact-h4'];
+console.log(contactHeader);
 
+const contactParagraph = document.querySelectorAll()
