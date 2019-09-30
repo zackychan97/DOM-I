@@ -120,4 +120,16 @@ const contactHeader = document.querySelector('.contact h4');
 contactHeader.innerText = siteContent.contact['contact-h4'];
 console.log(contactHeader);
 
-const contactParagraph = document.querySelectorAll()
+const contactParagraph = document.querySelectorAll('.contact p');
+contactParagraph[0].innerText = siteContent.contact['address'];
+contactParagraph[1].innerText = siteContent.contact['phone'];
+contactParagraph[2].innerText = siteContent.contact['email'];
+console.log(contactParagraph);
+
+
+
+//footer
+
+const footer = document.querySelector('footer');
+footer.innerText = siteContent.footer.copyright;
+console.log(footer);
