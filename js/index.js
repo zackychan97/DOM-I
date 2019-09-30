@@ -58,12 +58,39 @@ linksNav.forEach(link => {
 
 
 const newLinks = document.createElement('a');
-newLinks.textContent = 'testimonial';
+newLinks.textContent = 'Reviews';
 console.log(newLinks);
 const apply = document.querySelector('nav');
 apply.appendChild(newLinks);
 
 const newLinksTwo = document.createElement('a');
+newLinksTwo.textContent = 'Jobs';
+newLinksTwo.style.marginRight = "-190px"; // maybe comment this out later see what happens
+console.log(newLinksTwo);
+const beginner = document.querySelector('nav');
+beginner.prepend(newLinksTwo);
+
+const navWords = document.querySelectorAll('a');
+navWords.forEach(function(aColor) {
+  aColor.style.color = 'green';
+});
+console.log(navWords)
+
+
+
+// CTA
+
+const header = document.querySelector('h1');
+header.innerText = siteContent.cta.h1;
+console.log(header);
+
+const btn = document.querySelector('button');
+console.log(btn);
+
+const CTAimage = document.querySelector('#cta-img');
+CTAimage.src = siteContent.cta['img-src'];
+console.log(CTAimage);
+
 
 
 
