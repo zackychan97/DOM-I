@@ -87,6 +87,8 @@ console.log(header);
 const btn = document.querySelector('button');
 console.log(btn);
 
+btn.textContent = 'Get Started';
+
 const CTAimage = document.querySelector('#cta-img');
 CTAimage.src = siteContent.cta['img-src'];
 console.log(CTAimage);
