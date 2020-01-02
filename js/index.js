@@ -40,3 +40,98 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+
+// nav bar stuff
+
+let linksNav = ['Services', 'Product', 'Vision', 'Features', 'About', 'Contact'];
+let navbar = document.querySelector('nav');
+console.log(navbar);
+
+linksNav.forEach(link => {
+  const linkList = document.createElement('a');
+  linkList.textContent = link;
+  navbar.append(linkList);
+})
+
+
+const newLinks = document.createElement('a');
+newLinks.textContent = 'Reviews';
+console.log(newLinks);
+const apply = document.querySelector('nav');
+apply.appendChild(newLinks);
+
+const newLinksTwo = document.createElement('a');
+newLinksTwo.textContent = 'Jobs';
+newLinksTwo.style.marginRight = "-190px"; // maybe comment this out later see what happens
+console.log(newLinksTwo);
+const beginner = document.querySelector('nav');
+beginner.prepend(newLinksTwo);
+
+const navWords = document.querySelectorAll('a');
+navWords.forEach(function(aColor) {
+  aColor.style.color = 'green';
+});
+console.log(navWords)
+
+
+
+// CTA
+
+const header = document.querySelector('h1');
+header.innerText = siteContent.cta.h1;
+console.log(header);
+
+const btn = document.querySelector('button');
+console.log(btn);
+
+btn.textContent = 'Get Started';
+
+const CTAimage = document.querySelector('#cta-img');
+CTAimage.src = siteContent.cta['img-src'];
+console.log(CTAimage);
+
+
+// main stuff section
+
+let mainContentHeadings = document.querySelectorAll('.main-content h4');
+mainContentHeadings[0].innerText = siteContent['main-content']['features-h4'];
+mainContentHeadings[1].innerText = siteContent['main-content']['about-h4'];
+mainContentHeadings[2].innerText = siteContent['main-content']['services-h4'];
+mainContentHeadings[3].innerText = siteContent['main-content']['product-h4'];
+mainContentHeadings[4].innerText = siteContent['main-content']['vision-h4'];
+console.log(mainContentHeadings);
+
+let mainContentParagraphs = document.querySelectorAll('.main-content p');
+mainContentParagraphs[0].innerText = siteContent['main-content']['features-content'];
+mainContentParagraphs[1].innerText = siteContent['main-content']['about-content'];
+mainContentParagraphs[2].innerText = siteContent['main-content']['services-content'];
+mainContentParagraphs[3].innerText = siteContent['main-content']['product-content'];
+mainContentParagraphs[4].innerText = siteContent['main-content']['vision-content'];
+console.log(mainContentParagraphs);
+
+const mainContentImage = document.querySelector('#middle-img');
+mainContentImage.src = siteContent['main-content']['middle-img-src'];
+console.log(mainContentImage);
+
+// contact
+
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.innerText = siteContent.contact['contact-h4'];
+console.log(contactHeader);
+
+const contactParagraph = document.querySelectorAll('.contact p');
+contactParagraph[0].innerText = siteContent.contact['address'];
+contactParagraph[1].innerText = siteContent.contact['phone'];
+contactParagraph[2].innerText = siteContent.contact['email'];
+console.log(contactParagraph);
+
+
+
+//footer
+
+const footer = document.querySelector('footer');
+footer.innerText = siteContent.footer.copyright;
+console.log(footer);
